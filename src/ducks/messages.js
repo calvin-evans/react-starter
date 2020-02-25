@@ -1,6 +1,7 @@
-import { createSlice } from 'redux-starter-kit'
+import { createSlice } from '@reduxjs/toolkit'
 
 const { actions, reducer } = createSlice({
+  name: 'messages',
   initialState: {
     byId: {}
   },

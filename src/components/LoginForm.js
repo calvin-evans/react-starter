@@ -1,7 +1,10 @@
 import React, { useRef } from 'react'
 import { Redirect } from 'react-router-dom'
 import { FiUser } from 'react-icons/fi'
-import { Button, Input, Form, Field } from 'ans-base-ui'
+import Button from '../components/Button'
+import Input from '../components/Input'
+import Form from '../components/Form'
+import Field from '../components/Form/Field'
 import loginStyles from '../styles/LoginForm.module.scss'
 
 const LoginForm = ({ handleLogin, loggingIn, loggedIn, location }) => {

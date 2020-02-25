@@ -4,7 +4,7 @@ import 'normalize.css'
 import { Provider } from 'react-redux'
 import createSagaMiddleware from 'redux-saga'
 import { all } from 'redux-saga/effects'
-import { configureStore, getDefaultMiddleware } from 'redux-starter-kit'
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import logger from 'redux-logger'
 
 import App from './App'

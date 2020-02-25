@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { REMOVE_MESSAGE } from '../ducks/messages'
-import { Toast } from 'ans-base-ui'
+import Toast from '../components/Toast'
 
 const mapStateToProps = state => {
   return {

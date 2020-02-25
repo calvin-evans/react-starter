@@ -1,9 +1,10 @@
-import { createSlice } from 'redux-starter-kit'
+import { createSlice } from '@reduxjs/toolkit'
 import { call, put, takeLatest } from 'redux-saga/effects'
 import { SHOW_MESSAGE } from './messages'
 import API, { updateToken } from '../api'
 
 const { actions, reducer } = createSlice({
+  name: 'auth',
   initialState: {
     currentUser: false,
     loggingIn: false,
