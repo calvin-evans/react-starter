@@ -8,7 +8,6 @@ import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import logger from 'redux-logger'
 
 import App from './App'
-import authReducer, { saga as authSaga } from './ducks/auth'
 import messageReducer from './ducks/messages'
 import * as serviceWorker from './serviceWorker'
 
@@ -18,7 +17,6 @@ const sagaMiddleware = createSagaMiddleware()
 
 function * rootSaga () {
   yield all([
-    authSaga()
   ])
 }
 
@@ -31,7 +29,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const store = configureStore({
   reducer: {
-    auth: authReducer,
     messages: messageReducer
   },
 middleware})

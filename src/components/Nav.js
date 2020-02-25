@@ -7,7 +7,7 @@ const Nav = () => (
   <nav className={navStyles.root}>
     <Link to="/">
       <div className={navStyles.logo}>
-        <h1>Express<br/>Starter</h1>
+        <h1>React<br/>Starter</h1>
       </div>
     </Link>
     <ul className={navStyles.links}>
