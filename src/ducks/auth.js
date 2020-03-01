@@ -78,11 +78,11 @@ function * onLoginRestored({ payload }) {
 }
 
 export function * saga() {
-  yield takeLatest('LOGIN_ATTEMPT', onLoginAttempt)
-  yield takeLatest('LOGIN_SUCCESS', onLoginSuccess)
-  yield takeLatest('LOGIN_FAILED', onLoginFailed)
-  yield takeLatest('LOGIN_RESTORED', onLoginRestored)
-  yield takeLatest('LOGOUT', onLogout)
+  yield takeLatest('auth/LOGIN_ATTEMPT', onLoginAttempt)
+  yield takeLatest('auth/LOGIN_SUCCESS', onLoginSuccess)
+  yield takeLatest('auth/LOGIN_FAILED', onLoginFailed)
+  yield takeLatest('auth/LOGIN_RESTORED', onLoginRestored)
+  yield takeLatest('auth/LOGOUT', onLogout)
 }
 
 export const { LOGIN_ATTEMPT, LOGIN_SUCCESS, LOGIN_FAILED, LOGOUT, LOGIN_RESTORED } = actions
