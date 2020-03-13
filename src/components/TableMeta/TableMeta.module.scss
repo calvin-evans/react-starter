@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  * {
+    margin: 0;
+  }
+}
+
+.entryCount {
+  color: #7C7C7C;
+  padding: 1rem 3rem;
+  margin-bottom: 1.5rem;
+}
