@@ -32,6 +32,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ui": "cypress run --headless",
     "lint": "eslint ./src/**/*.js -f mo",
     "lint:fix": "eslint ./src/**/*.js -f mo --fix",
     "coverage": "npm test -- --coverage",
