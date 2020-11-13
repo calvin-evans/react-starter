@@ -27,7 +27,6 @@ const { actions, reducer } = createSlice({
         ? state.sessions
         : state.sessions.concat(payload.id)
     },
-    // eslint-disable-next-line sonarjs/no-identical-functions
     LOGIN_SUCCESS: (state, { payload }) => {
       state.currentUser = payload.id
       state.loggingIn = false
